@@ -114,6 +114,13 @@ body {
   font-weight: 600;
 }
 
+#confirmation-message {
+  display: none;
+  color: green;
+  font-weight: bold;
+  margin-top: 20px;
+}
+
 .layout_padding {
   padding: 90px 0;
 }
