@@ -1,17 +1,4 @@
 
-document.getElementById("registorform").addEventListener("click", function() {
-    // Set the new URL here
-    var newURL = "https://neiljoestar.aidaform.com/expert-employee-information-form";
-    
-    // Redirect to the new URL
-    window.location.href = newURL;
-});
-
-// to get current year
-document.querySelector("#trigger-login").addEventListener("click", function() {
-    // Simulate a click on the show-login button
-    document.querySelector("#show-login").click();
-  });
 
 
 
@@ -222,4 +209,31 @@ document.querySelector("#show-login").addEventListener("click", function() {
 
 
     
-
+    document.getElementById("registorform").addEventListener("click", function() {
+        // Set the new URL here
+        var newURL = "https://neiljoestar.aidaform.com/expert-employee-information-form";
+        
+        // Redirect to the new URL
+        window.location.href = newURL;
+    });
+    
+    // to get current year
+    document.querySelector("#trigger-login").addEventListener("click", function() {
+        // Simulate a click on the show-login button
+        document.querySelector("#show-login").click();
+      });
+    
+    
+      function signIn() {
+        // You can add your actual sign-in logic here
+        // For this example, we will just show the confirmation message
+    
+        // Display the confirmation message
+        document.getElementById("confirmation-message").style.display = "block";
+    
+        // Redirect to another HTML page after a delay (for demonstration purposes)
+        setTimeout(function () {
+            // Replace 'path/to/your/destination.html' with the actual path to your HTML file
+            window.location.href = 'index.html';
+        }, 2000); // 2000 milliseconds (2 seconds) delay before redirecting
+    }
